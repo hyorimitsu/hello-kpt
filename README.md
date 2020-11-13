@@ -16,6 +16,7 @@ Create a key-value pair setter as a data item to change the settings for each en
 When the command is executed, the setter is added to the Kptfile.
 ```
 $ kpt cfg create-setter sample/ name xxx
+$ kpt cfg create-setter sample/ image xxx
 ```
 
 (created setter example)

@@ -11,3 +11,8 @@ openAPI:
         setter:
           name: name
           value: xxx
+    io.k8s.cli.setters.image:
+      x-k8s-cli:
+        setter:
+          name: image
+          value: xxx
