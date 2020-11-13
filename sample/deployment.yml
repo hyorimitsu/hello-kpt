@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xxx # {"$ref":"#/definitions/io.k8s.cli.setters.name"}
+spec:
+  replicas: 3
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  selector:
+    matchLabels:
+      run: xxx # {"$ref":"#/definitions/io.k8s.cli.setters.name"}
+  template:
+    metadata:
+      labels:
+        run: xxx # {"$ref":"#/definitions/io.k8s.cli.setters.name"}
+    spec:
+      containers:
+      - name: xxx # {"$ref":"#/definitions/io.k8s.cli.setters.name"}
+        image: xxx # {"$ref":"#/definitions/io.k8s.cli.setters.name"}
+        ports:
+        - containerPort: 443
+        - containerPort: 80

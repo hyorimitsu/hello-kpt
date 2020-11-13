@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: xxx # {"$ref":"#/definitions/io.k8s.cli.setters.name"}
+  labels:
+    run: xxx # {"$ref":"#/definitions/io.k8s.cli.setters.name"}
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    targetPort: 80
+    protocol: TCP
+    name: http
+  - port: 443
+    protocol: TCP
+    name: https
+  selector:
+    run: xxx # {"$ref":"#/definitions/io.k8s.cli.setters.name"}
