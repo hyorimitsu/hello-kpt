@@ -1,6 +1,8 @@
 Hello Kpt
 ---
 
+**NOTE:** The usage of Kpt described in this repository is outdated. Please refer to the [official documentation](https://kpt.dev/) for the latest information.
+
 This is a sample of [Kpt](https://googlecontainertools.github.io/kpt/), a tool for packaging, customizing, validating, and applying Kubernetes resources.
 
 ## Description
